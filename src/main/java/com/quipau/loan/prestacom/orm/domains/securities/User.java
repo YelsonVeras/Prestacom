@@ -2,14 +2,16 @@ package com.quipau.loan.prestacom.orm.domains.securities;
 
 import com.quipau.loan.prestacom.models.abstracts.Auditable;
 import com.quipau.loan.prestacom.models.enums.Language;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Data
-@Builder
 @DynamicUpdate
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor

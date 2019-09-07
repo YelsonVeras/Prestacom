@@ -27,8 +27,15 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-data-rest'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+    implementation 'org.springframework.data:spring-data-rest-hal-browser'
+
     implementation 'org.mariadb.jdbc:mariadb-java-client:2.4.1'
+
     implementation 'commons-codec:commons-codec:1.10'
+
+    implementation 'io.netty:netty-all:4.0.24.Final'
 
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.zaxxer:HikariCP:3.3.1'

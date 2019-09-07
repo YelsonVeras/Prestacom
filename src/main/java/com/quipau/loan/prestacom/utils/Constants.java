@@ -16,6 +16,8 @@ public final class Constants {
     private static final String DATE_HOUR_FIND = DATE_FIND + " " + HOUR_FORMAT;
 
     public static final String SYSTEM_USER = "System";
+    public static final String PERMISSION_GROUP_ROOT = "ROOT";
+    public static final String PERMISSION_GROUP_ADMIN = "ADMIN";
 
     public static final SimpleDateFormat hourFormat = new SimpleDateFormat(HOUR_FORMAT);
     public static final SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DATE_FIND);

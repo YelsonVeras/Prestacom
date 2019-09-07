@@ -6,6 +6,8 @@ import com.quipau.loan.prestacom.orm.repositories.securities.PermissionGroupRepo
 import com.quipau.loan.prestacom.utils.Constants;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class PermissionGroupService implements Services<PermissionGroup> {
 
@@ -19,4 +21,7 @@ public class PermissionGroupService implements Services<PermissionGroup> {
         return save(item, Constants.SYSTEM_USER, repository);
     }
 
+    public Optional<PermissionGroup> findByName(String name) {
+        return repository.findByName(name);
+    }
 }

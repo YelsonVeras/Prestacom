@@ -1,21 +1,29 @@
 package com.quipau.loan.prestacom.orm.domains.company;
 
 import com.quipau.loan.prestacom.models.abstracts.Auditable;
-import lombok.*;
+import com.quipau.loan.prestacom.orm.domains.securities.Parameter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import java.util.Set;
 
+;
+
 
 @Data
-@Builder
 @DynamicUpdate
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity(name = "companies")
 public class Company extends Auditable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     @Column(nullable = false)
     private String name;
     @Column(nullable = false, unique = true)

@@ -10,9 +10,9 @@ import java.util.Optional;
 
 @Repository
 public interface CountryRepository extends JpaRepository<Country, Long> {
-    Optional<Country> findByNameAndEnabled(String name, boolean enabled);
-
     Page<Country> findAllByNameLikeAndEnabled(Pageable pageable, String filterValue, boolean enabled);
 
     long countByNameLikeAndEnabled(String filterValue, boolean enabled);
+
+    Optional<Country> findByName(String name);
 }

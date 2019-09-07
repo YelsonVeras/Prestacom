@@ -10,7 +10,7 @@ import java.util.Optional;
 
 @Repository
 public interface ParameterRepository extends JpaRepository<Parameter, Long> {
-    Optional<Parameter> findByCodeAndEnabled(Integer code, boolean enabled);
+    Optional<Parameter> findByCode(Integer code);
 
     Page<Parameter> findAllByNameLikeAndEnabled(Pageable pageable, String filterValue, boolean enabled);
 

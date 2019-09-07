@@ -6,6 +6,8 @@ import com.quipau.loan.prestacom.orm.repositories.securities.PermissionRepositor
 import com.quipau.loan.prestacom.utils.Constants;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class PermissionService implements Services<Permission> {
 
@@ -19,4 +21,7 @@ public class PermissionService implements Services<Permission> {
         return save(item, Constants.SYSTEM_USER, repository);
     }
 
+    public Optional<Permission> findByCode(Integer code) {
+        return repository.findByCode(code);
+    }
 }

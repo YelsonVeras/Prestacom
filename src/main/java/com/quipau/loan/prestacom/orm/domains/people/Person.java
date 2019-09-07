@@ -5,14 +5,18 @@ import com.quipau.loan.prestacom.models.enums.person.Gender;
 import com.quipau.loan.prestacom.models.enums.person.MaritalStatus;
 import com.quipau.loan.prestacom.models.enums.person.Nationality;
 import com.quipau.loan.prestacom.orm.domains.locations.Address;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import java.util.Date;
 
+;
+
 @Data
-@Builder
 @DynamicUpdate
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor

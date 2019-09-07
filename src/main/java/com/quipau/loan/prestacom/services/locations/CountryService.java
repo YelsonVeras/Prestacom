@@ -6,6 +6,8 @@ import com.quipau.loan.prestacom.orm.repositories.location.CountryRepository;
 import com.quipau.loan.prestacom.utils.Constants;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class CountryService implements Services<Country> {
 
@@ -19,4 +21,7 @@ public class CountryService implements Services<Country> {
         return save(item, Constants.SYSTEM_USER, repository);
     }
 
+    public Optional<Country> findByName(String name) {
+        return repository.findByName(name);
+    }
 }

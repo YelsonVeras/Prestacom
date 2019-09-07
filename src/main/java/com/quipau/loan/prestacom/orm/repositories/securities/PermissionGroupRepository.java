@@ -10,7 +10,17 @@ import java.util.Optional;
 
 @Repository
 public interface PermissionGroupRepository extends JpaRepository<PermissionGroup, Long> {
-    Optional<PermissionGroup> findByNameAndEnabled(String name, boolean enabled);
+
+    Optional<PermissionGroup> findByName(String name);
+
+    //    @Query(value = "SELECT p.*" +
+//            " FROM users u" +
+//            "   JOIN user_permissions up ON u.id = up.user_id" +
+//            "   JOIN permissions p ON up.permission_id = p.id" +
+//            " WHERE u.id=?1 and p.name like '%%'", nativeQuery = true)
+//    @EntityGraph(attributePaths = "permissions")
+//    @Query("select pg from PermissionGroup pg left join fetch pg.permissions where pg.id =:id")
+    Optional<PermissionGroup> findById(Long aLong);
 
     Page<PermissionGroup> findAllByNameLikeAndEnabled(Pageable pageable, String filter, boolean enabled);
 
