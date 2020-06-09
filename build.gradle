@@ -7,7 +7,7 @@ plugins {
 
 group = 'com.quipau.loan'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '12'
+sourceCompatibility = '11'
 
 configurations {
     developmentOnly
@@ -25,11 +25,7 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-data-rest'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-actuator'
-    implementation 'org.springframework.boot:spring-boot-starter-hateoas'
-    implementation 'org.springframework.data:spring-data-rest-hal-browser'
 
     implementation 'org.mariadb.jdbc:mariadb-java-client:2.4.1'
 
@@ -37,12 +33,8 @@ dependencies {
 
     implementation 'io.netty:netty-all:4.0.24.Final'
 
-    implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.zaxxer:HikariCP:3.3.1'
     implementation 'com.google.code.gson:gson:2.8.5'
-
-//    implementation 'org.springframework.boot:spring-boot-starter-security'
-//    implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.7.0'
 
     compileOnly 'org.projectlombok:lombok'
 

@@ -1,4 +1,4 @@
-package com.quipau.loan.prestacom.services.company;
+package com.quipau.loan.prestacom.orm.services.company;
 
 import com.quipau.loan.prestacom.models.interfaces.Services;
 import com.quipau.loan.prestacom.orm.domains.company.Department;

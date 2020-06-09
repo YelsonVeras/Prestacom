@@ -6,14 +6,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class PrestacomApplication {
+public class Application extends ServletInitializer {
 
-	public static void main(String[] args) {
-		SpringApplication.run(PrestacomApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
 
-	@Bean
-	BootStrap initialize() {
-		return new BootStrap();
-	}
+    @Bean
+    BootStrap initialize() {
+        return new BootStrap();
+    }
 }

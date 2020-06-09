@@ -2,7 +2,7 @@ package com.quipau.loan.prestacom.utils.bootstrap;
 
 import com.quipau.loan.prestacom.models.interfaces.BootStrapInsert;
 import com.quipau.loan.prestacom.orm.domains.securities.Parameter;
-import com.quipau.loan.prestacom.services.securities.ParameterService;
+import com.quipau.loan.prestacom.orm.services.securities.ParameterService;
 import com.quipau.loan.prestacom.utils.security.SystemParameters;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

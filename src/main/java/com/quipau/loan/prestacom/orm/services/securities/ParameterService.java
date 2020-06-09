@@ -1,4 +1,4 @@
-package com.quipau.loan.prestacom.services.securities;
+package com.quipau.loan.prestacom.orm.services.securities;
 
 import com.quipau.loan.prestacom.models.interfaces.Services;
 import com.quipau.loan.prestacom.orm.domains.securities.Parameter;

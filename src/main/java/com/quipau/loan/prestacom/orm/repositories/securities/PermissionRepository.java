@@ -20,13 +20,4 @@ public interface PermissionRepository extends JpaRepository<Permission, Long> {
     Page<Permission> findAllByNameLikeAndEnabled(Pageable pageable, String filter, boolean enabled);
 
     long countByNameLikeAndEnabled(String filter, boolean enabled);
-
-    //    @Query(value = "SELECT p.*" +
-//            " FROM users u" +
-//            "   JOIN user_permissions up ON u.id = up.user_id" +
-//            "   JOIN permissions p ON up.permission_id = p.id" +
-//            " WHERE u.id=?1 and p.name like '%%'", nativeQuery = true)
-//    @EntityGraph(attributePaths = "permissions")
-//    @Query("select article from Article article left join fetch article.topics where article.id =:id")
-//    List<Permission> findAllPermissions(@Param("userId") Long userId, @Param("filterValue") String filterValue);
 }

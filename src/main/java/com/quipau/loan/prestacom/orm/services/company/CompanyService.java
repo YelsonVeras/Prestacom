@@ -1,9 +1,8 @@
-package com.quipau.loan.prestacom.services.company;
+package com.quipau.loan.prestacom.orm.services.company;
 
 import com.quipau.loan.prestacom.models.interfaces.Services;
 import com.quipau.loan.prestacom.orm.domains.company.Company;
 import com.quipau.loan.prestacom.orm.repositories.company.CompanyRepository;
-import com.quipau.loan.prestacom.utils.Constants;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;

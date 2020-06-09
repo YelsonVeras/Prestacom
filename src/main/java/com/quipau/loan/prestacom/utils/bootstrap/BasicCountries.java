@@ -3,7 +3,7 @@ package com.quipau.loan.prestacom.utils.bootstrap;
 import com.quipau.loan.prestacom.models.enums.location.*;
 import com.quipau.loan.prestacom.models.interfaces.BootStrapInsert;
 import com.quipau.loan.prestacom.orm.domains.locations.Country;
-import com.quipau.loan.prestacom.services.locations.CountryService;
+import com.quipau.loan.prestacom.orm.services.locations.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

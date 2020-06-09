@@ -4,8 +4,8 @@ import com.quipau.loan.prestacom.models.enums.Language;
 import com.quipau.loan.prestacom.models.interfaces.BootStrapInsert;
 import com.quipau.loan.prestacom.orm.domains.securities.Permission;
 import com.quipau.loan.prestacom.orm.domains.securities.User;
-import com.quipau.loan.prestacom.services.securities.PermissionGroupService;
-import com.quipau.loan.prestacom.services.securities.UserService;
+import com.quipau.loan.prestacom.orm.services.securities.PermissionGroupService;
+import com.quipau.loan.prestacom.orm.services.securities.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

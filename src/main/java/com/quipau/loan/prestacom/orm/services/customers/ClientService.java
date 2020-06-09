@@ -1,21 +1,21 @@
-package com.quipau.loan.prestacom.services.locations;
+package com.quipau.loan.prestacom.orm.services.customers;
 
 import com.quipau.loan.prestacom.models.interfaces.Services;
-import com.quipau.loan.prestacom.orm.domains.locations.Address;
-import com.quipau.loan.prestacom.orm.repositories.location.AddressRepository;
+import com.quipau.loan.prestacom.orm.domains.customers.Client;
+import com.quipau.loan.prestacom.orm.repositories.customers.ClientRepository;
 import com.quipau.loan.prestacom.utils.Constants;
 import org.springframework.stereotype.Service;
 
 @Service
-public class AddressService implements Services<Address> {
+public class ClientService implements Services<Client> {
 
-    private final AddressRepository repository;
+    private final ClientRepository repository;
 
-    public AddressService(AddressRepository repository) {
+    public ClientService(ClientRepository repository) {
         this.repository = repository;
     }
 
-    public Address save(Address item) {
+    public Client save(Client item) {
         return save(item, Constants.SYSTEM_USER, repository);
     }
 

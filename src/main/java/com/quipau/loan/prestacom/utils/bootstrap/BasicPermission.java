@@ -3,7 +3,7 @@ package com.quipau.loan.prestacom.utils.bootstrap;
 import com.quipau.loan.prestacom.models.enums.EnumPermission;
 import com.quipau.loan.prestacom.models.interfaces.BootStrapInsert;
 import com.quipau.loan.prestacom.orm.domains.securities.Permission;
-import com.quipau.loan.prestacom.services.securities.PermissionService;
+import com.quipau.loan.prestacom.orm.services.securities.PermissionService;
 import com.quipau.loan.prestacom.utils.security.SystemPermission;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

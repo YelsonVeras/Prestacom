@@ -1,7 +1,7 @@
 package com.quipau.loan.prestacom.service.company;
 
 import com.quipau.loan.prestacom.orm.domains.company.Company;
-import com.quipau.loan.prestacom.services.company.CompanyService;
+import com.quipau.loan.prestacom.orm.services.company.CompanyService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

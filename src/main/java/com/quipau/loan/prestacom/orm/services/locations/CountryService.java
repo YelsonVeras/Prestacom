@@ -1,4 +1,4 @@
-package com.quipau.loan.prestacom.services.locations;
+package com.quipau.loan.prestacom.orm.services.locations;
 
 import com.quipau.loan.prestacom.models.interfaces.Services;
 import com.quipau.loan.prestacom.orm.domains.locations.Country;

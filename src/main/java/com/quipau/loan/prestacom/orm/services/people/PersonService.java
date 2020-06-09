@@ -1,4 +1,4 @@
-package com.quipau.loan.prestacom.services.people;
+package com.quipau.loan.prestacom.orm.services.people;
 
 import com.quipau.loan.prestacom.models.interfaces.Services;
 import com.quipau.loan.prestacom.orm.domains.people.Person;
